@@ -1,9 +1,8 @@
 <template>
-     <b-row align-v="center" class="login">
-       <b-col>
-         <h1>{{msg}}</h1>
-         <b-card header="Bem vindo"
-                class="text-center">
+     <b-row align-v="center" deck class="mb-3 login">
+       <b-col class="text-center">
+         <h3>{{msg}}</h3>
+         <b-card border-variant="light" header="Bem Vindo(a)" class="text-center">
             <b-form>
               <b-form-input id='cpf'
                             type='text'
@@ -23,6 +22,11 @@
 
             </b-form>
           </b-card>
+
+          <b-row align-h="center">
+        <b-col cols="4">One of two columns</b-col>
+        <b-col cols="4">One of two columns</b-col>
+    </b-row>
        </b-col>
      </b-row>
 </template>
@@ -44,14 +48,12 @@ export default {
 
 <style>
 .login{
-      background-color: rgba(255, 0, 0, 1);
-      padding-bottom: 20px;
-      
+      height: inherit;
+      width: inherit;
  }
-
-b-row{
-    height: inherit;
-    width: inherit;
+ 
+.row{
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 </style>

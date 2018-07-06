@@ -30,4 +30,8 @@ export default {
    #principal{
       background-color: #58FA82
    }
+
+   row{
+      height: inherit;
+   }
 </style>
